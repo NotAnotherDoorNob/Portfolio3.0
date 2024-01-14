@@ -83,30 +83,23 @@ select {
   }
   
 
-
-@font-face { 
-    font-family: 'PPNeueMachina'; 
-    src: url("/fonts/PPNeueMachina-InktrapRegular.otf") format('opentype'); 
-    font-weight: 400;
-  } 
-
-@font-face { 
-    font-family: 'PPNeueMachina'; 
-    src: url("/fonts/PPNeueMachina-InktrapUltrabold.otf") format('opentype'); 
-    font-weight: 700;
-  } 
-
-
-
-
-
-
-/*----------------------------------- Main -----------------------------------*/
+/*----------------------------------- fonts -----------------------------------*/
 
 h1 {   
     font-family: 'PPNeueMachina';
     font-size: 128px;
-    font-weight: 400;
+    font-weight: 300;
+}
+
+#super-bold {
+    font-weight: 700;
+}
+
+p {
+    font-family: 'InterTight';
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
 }
 
 
