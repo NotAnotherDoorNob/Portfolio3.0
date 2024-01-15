@@ -83,6 +83,29 @@ select {
   }
   
 
+/*----------------------------------- Main -----------------------------------*/
+  
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-font);
+    font-family: 'InterTight';
+    text-decoration: none;
+}
+
+
+/*----------------------------------- Main -----------------------------------*/
+
+a:link {
+    text-decoration: none;
+    color: var(--color-font);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--color-font);
+}
+
 /*----------------------------------- fonts -----------------------------------*/
 
 h1 {   
@@ -103,10 +126,4 @@ p {
 }
 
 
-/*----------------------------------- Main -----------------------------------*/
-  
 
-body {
-    background-color: var(--color-bg);
-    color: var(--color-font);
-}
