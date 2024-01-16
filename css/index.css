@@ -79,11 +79,12 @@ select {
 
 :root {
     --color-bg: #1D1E25;
+    --color-white: #FFFFFF;
     --color-font: #FFFFFF;
   }
   
 
-/*----------------------------------- Main -----------------------------------*/
+/*----------------------------------- bodyodyody -----------------------------------*/
   
 
 body {
@@ -91,10 +92,62 @@ body {
     color: var(--color-font);
     font-family: 'InterTight';
     text-decoration: none;
+    margin: 0;
 }
 
 
-/*----------------------------------- Main -----------------------------------*/
+/*----------------------------------- navigation -----------------------------------*/
+
+
+
+nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 25px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  z-index: 100;
+  position: sticky;
+  top: 0px;
+}
+
+.nav-bar {
+  background-color: var(--color-white);
+  height: .5px;
+  width: 100%;
+  margin: 12px 0 12px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+
+#projects-about {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+
+
+
+/*----------------------------------- states -----------------------------------*/
 
 a:link {
     text-decoration: none;
