@@ -117,7 +117,7 @@ nav {
   background-color: var(--color-white);
   height: .5px;
   width: 100%;
-  margin: 12px 0 12px;
+  margin: 12px 0 0;
 }
 
 .nav-links {
@@ -127,7 +127,7 @@ nav {
   width: 100%;
   font-size: 1.2rem;
   font-weight: 500;
-  margin: 0 0 12px;
+  margin: 16px 0 8px;
 }
 
 
@@ -136,6 +136,33 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.hover-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding: 0.1em 0;
+}
+
+.hover-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-font);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 main {
