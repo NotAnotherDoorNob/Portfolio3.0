@@ -95,6 +95,81 @@ body {
     margin: 0;
 }
 
+main {
+  max-width: 1400px;
+  margin: 0;
+  padding: 0 25px;
+}
+
+
+
+/*----------------------------------- links and buttons -----------------------------------*/
+
+
+.hover-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding: 0.3em 0;
+}
+
+.hover-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-font);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+/*----------------------------------- states -----------------------------------*/
+
+a:link {
+    text-decoration: none;
+    color: var(--color-font);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--color-font);
+}
+
+/*----------------------------------- fonts -----------------------------------*/
+
+h1 {   
+    font-family: 'PPNeueMachina';
+    font-size: 128px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 172px;
+}
+
+#super-bold {
+    font-weight: 700;
+}
+
+p {
+    font-family: 'InterTight';
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+}
+
 
 /*----------------------------------- navigation -----------------------------------*/
 
@@ -125,9 +200,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 16px 0 8px;
+  margin: 12px 0 4px;
 }
 
 
@@ -138,72 +211,14 @@ nav {
   justify-content: space-between;
 }
 
-.hover-link {
-  font-size: 1.2rem;
-  font-weight: 500;
-  overflow: hidden;
-  display: block;
-  position: relative;
-  padding: 0.1em 0;
-}
 
-.hover-link::before {
-  content: '';
-  position: absolute;
+/*----------------------------------- hero -----------------------------------*/
+
+.main-header {
   width: 100%;
-  transform: scaleX(0);
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-font);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  height: calc(100vh - 69px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:end ;
 }
-
-.hover-link:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-main {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 25px;
-}
-
-
-
-
-/*----------------------------------- states -----------------------------------*/
-
-a:link {
-    text-decoration: none;
-    color: var(--color-font);
-}
-
-a:visited {
-    text-decoration: none;
-    color: var(--color-font);
-}
-
-/*----------------------------------- fonts -----------------------------------*/
-
-h1 {   
-    font-family: 'PPNeueMachina';
-    font-size: 128px;
-    font-weight: 300;
-}
-
-#super-bold {
-    font-weight: 700;
-}
-
-p {
-    font-family: 'InterTight';
-    font-size: 16px;
-    font-weight: 100;
-    font-style: normal;
-}
-
-
-
