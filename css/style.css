@@ -222,3 +222,21 @@ nav {
   flex-direction: column;
   justify-content:end ;
 }
+
+.lineContainer{
+  width: 100vw;
+  position:relative;
+  overflow:hidden;
+}
+
+.line{
+  width: 70%;
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+}
+
+span{
+  position: absolute;
+  line-height: 7.4rem;
+}
