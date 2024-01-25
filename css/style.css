@@ -230,7 +230,7 @@ nav {
 }
 
 .line{
-  width: 70%;
+  width: 90%;
   height: 130px;
   position: relative;
   overflow: hidden;
@@ -238,5 +238,5 @@ nav {
 
 span{
   position: absolute;
-  line-height: 7.4rem;
+  line-height: 8rem;
 }

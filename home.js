@@ -2,14 +2,14 @@ const line = '.line';
 let count = 0;
 const text = document.getElementById("text");
 const wordArray = [
+  "UX Designer",
   "UX Researcher",
   "UI Developer",
+  "Font Nerd",
   "D&D Enthusiast",
   "Daft Punk Fan",
-  "Human Person",
-  "안녕하세요!",
-  "¡Olá!",
-  "Hello!"
+  "Amature Baker",
+  "Human Person"
 ];
 
 gsap.set(line, {
@@ -26,10 +26,10 @@ const alternateText = () => {
     defaults: { ease: "expo.inOut", duration: 1}
       })
     .add('start')
-    .to(line, { y: 200, delay: 3 , skewY: 7,stagger: {
+    .to(line, { y: 210, delay: 4.5 , skewY: 7,stagger: {
     amount: 7
   },  onComplete: onRepeat})
-    .to(line, { y: 0, delay: 1, skewY: 0, stagger: {
+    .to(line, { y: 0, delay: .4, skewY: 0, stagger: {
     amount: 0
   }})
 }
