@@ -12,6 +12,8 @@ const wordArray = [
   "Human Person"
 ];
 
+
+
 gsap.set(line, {
   y: 0, skewY: 0, stagger: {
     amount: 0
@@ -28,7 +30,7 @@ const alternateText = () => {
     .add('start')
     .to(line, { y: 210, delay: 4.5 , skewY: 7,stagger: {
     amount: 7
-  },  onComplete: onRepeat})
+  },  onComplete: swapText})
     .to(line, { y: 0, delay: .4, skewY: 0, stagger: {
     amount: 0
   }})
@@ -38,7 +40,7 @@ window.onload = () => {
 	alternateText()
 };
 
-function onRepeat() {
+function swapText() {
     if (count <= 6) {
     count++;
   } else {
@@ -46,3 +48,4 @@ function onRepeat() {
   }
   text.innerHTML = wordArray[count];
 };
+

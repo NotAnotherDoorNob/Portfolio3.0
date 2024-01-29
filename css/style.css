@@ -81,6 +81,12 @@ select {
     --color-bg: #1D1E25;
     --color-white: #FFFFFF;
     --color-font: #FFFFFF;
+    --Gradient-Red-Orange: linear-gradient(270deg, #FF7B26 0%, #FF5454 100%);
+    --Gradient-Orange-Yellow: linear-gradient(90deg, #FF7B26 -3.18%, #FFD954 100%);
+    --Gradient-Yellow-Green: linear-gradient(90deg, #FFD954 0%, #52FE84 99.21%);
+    --Gradient-Green-Blue: linear-gradient(90deg, #54FF84 0%, #3470FD 99.21%);
+    --Gradient-Blue-Purple: linear-gradient(270deg, #9734E8 0.4%, #3470FD 100%);
+    --Gradient-Purple-Red: linear-gradient(90deg, #9734E8 0%, #FF5454 99.21%);
   }
   
 
@@ -97,8 +103,15 @@ body {
 
 main {
   max-width: 1400px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 25px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  border: .5px solid var(--color-white);
 }
 
 
@@ -156,7 +169,21 @@ h1 {
     font-size: 128px;
     font-weight: 300;
     margin: 0;
-    line-height: 172px;
+    line-height: 148px;
+}
+
+h2 {   
+  font-family: 'PPNeueMachina';
+  font-size: 116px;
+  font-weight: 300;
+  margin: 0 0 16px 0;
+}
+
+h3 {   
+  font-family: 'PPNeueMachina';
+  font-size: 64px;
+  font-weight: 300;
+  margin: 0;
 }
 
 #super-bold {
@@ -212,9 +239,9 @@ nav {
 }
 
 
-/*----------------------------------- hero -----------------------------------*/
+/*----------------------------------- header -----------------------------------*/
 
-.main-header {
+header {
   width: 100%;
   height: calc(100vh - 69px);
   position: relative;
@@ -224,7 +251,7 @@ nav {
 }
 
 .lineContainer{
-  width: 100vw;
+  width: 80vw;
   position:relative;
   overflow:hidden;
 }
@@ -240,3 +267,63 @@ span{
   position: absolute;
   line-height: 8rem;
 }
+
+
+/*----------------------------------- section -----------------------------------*/
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+.space-holder {
+  height: 500px;
+}
+
+/*----------------------------------- Projects -----------------------------------*/
+
+.project {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+.project-about {
+  width: 36%;
+  padding: 0 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project-images {
+  width: 50%;
+  background-color: rgb(48, 48, 48);
+}
+
+/*----------------------------------- Pill -----------------------------------*/
+
+.pill-container {
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.pill {
+  display: inline-flex;
+  padding: 6px 20px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-bg);
+  border-radius: 39px;
+  background: var(--Gradient-Purple-Red);
+  font-family: "PP Neue Machina";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  }
+
+  
