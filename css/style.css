@@ -81,6 +81,13 @@ select {
     --color-bg: #1D1E25;
     --color-white: #FFFFFF;
     --color-font: #FFFFFF;
+
+    --primary-red: #FE534C;
+    --primary-yellow: #F1C722;
+    --primary-blue: #3470FD;
+
+
+
     --Gradient-Red-Orange: linear-gradient(270deg, #FF7B26 0%, #FF5454 100%);
     --Gradient-Orange-Yellow: linear-gradient(90deg, #FF7B26 -3.18%, #FFD954 100%);
     --Gradient-Yellow-Green: linear-gradient(90deg, #FFD954 0%, #52FE84 99.21%);
@@ -89,6 +96,19 @@ select {
     --Gradient-Purple-Red: linear-gradient(90deg, #9734E8 0%, #FF5454 99.21%);
   }
   
+  /*----------------------------------- SVGs -----------------------------------*/
+
+.svg-red {
+  fill: var(--primary-red);
+}
+
+.svg-yellow {
+  fill: var(--primary-yellow);
+}
+
+.svg-blue {
+  fill: var(--primary-blue);
+}
 
 /*----------------------------------- bodyodyody -----------------------------------*/
   
@@ -118,7 +138,7 @@ hr {
 
 /*----------------------------------- links and buttons -----------------------------------*/
 
-
+/*--------hover---------*/
 .hover-link {
   font-size: 1.2rem;
   font-weight: 500;
@@ -147,6 +167,35 @@ hr {
 }
 
 
+/*--------hover large---------*/
+.hover-link-lg {
+  font-family: 'PPNeueMachina';
+  font-size: 65px;
+  font-weight: 500;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding: 0.3em 0;
+  line-height: 0.3em;
+}
+
+.hover-link-lg::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-font);
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+.hover-link-lg:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 
 
@@ -176,7 +225,7 @@ h2 {
   font-family: 'PPNeueMachina';
   font-size: 116px;
   font-weight: 300;
-  margin: 0 0 16px 0;
+  margin: 0 0 72px 0;
 }
 
 h3 {   
@@ -184,6 +233,14 @@ h3 {
   font-size: 64px;
   font-weight: 300;
   margin: 0;
+}
+
+h4 {   
+  font-family: 'PPNeueMachina';
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0;
+  width: fit-content;
 }
 
 #super-bold {
@@ -196,6 +253,31 @@ p {
     font-weight: 100;
     font-style: normal;
 }
+
+/*----------------------------------- Pill -----------------------------------*/
+
+.pill-container {
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.pill {
+  display: inline-flex;
+  padding: 6px 20px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-bg);
+  border-radius: 39px;
+  background: var(--Gradient-Purple-Red);
+  font-family: "PP Neue Machina";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  }
+
+
 
 
 /*----------------------------------- navigation -----------------------------------*/
@@ -287,7 +369,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 60px 0;
+  margin: 0 0 128px 0;
 }
 
 .project-about {
@@ -303,27 +385,55 @@ section {
   background-color: rgb(48, 48, 48);
 }
 
-/*----------------------------------- Pill -----------------------------------*/
-
-.pill-container {
-  display: inline-flex;
-  justify-content: left;
-  align-items: center;
-  padding: 16px 0;
+.project-links {
+  height: 360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px 0 0 0;
 }
 
-.pill {
-  display: inline-flex;
-  padding: 6px 20px;
-  justify-content: center;
+
+.flex1-2 {
+  width: 100%;
+  margin: 0 10px 0 0;
+}
+
+.flex2-2 {
+  width: 100%;
+  margin: 0 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+}
+
+.project-link-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
   align-items: center;
-  color: var(--color-bg);
-  border-radius: 39px;
-  background: var(--Gradient-Purple-Red);
-  font-family: "PP Neue Machina";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 800;
-  }
+  height: 64px;
+  margin: 40px 0 0 0;
+}
+
+.flex2-2 h4 {
+  padding: 0 0 0 10px;
+  line-height: normal;
+}
+
+/*----------------------------------- Price Comparison-----------------------------------*/
+
+.comparison {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 128px 0;
+}
+
+
+
+
 
   

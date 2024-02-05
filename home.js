@@ -24,11 +24,11 @@ const alternateText = () => {
   gsap
     .timeline({
     repeat:-1 ,
-    delay: .5,
-    defaults: { ease: "expo.inOut", duration: 1}
+    delay: 0,
+    defaults: { ease: "expo.inOut", duration: 1.3}
       })
     .add('start')
-    .to(line, { y: 210, delay: 4.5 , skewY: 7,stagger: {
+    .to(line, { y: 210, delay: 4 , skewY: 7,stagger: {
     amount: 7
   },  onComplete: swapText})
     .to(line, { y: 0, delay: .4, skewY: 0, stagger: {
