@@ -216,19 +216,22 @@ button {
   padding: 8px 24px 6px 24px;
   justify-content: center;
   align-items: center;
-  color: var(--color-bg);
+  color: var(--color-white);
   border-radius: 39px;
-  background: var(--color-white);
+  background: var(--color-bg);
   font-family: "PP Neue Machina";
   font-size: 18px;
   font-style: normal;
   font-weight: 200;
-  border-style: none;
+  border: var(--color-white);
+  border-width: 2px;
+  border-style: solid;
   width: fit-content;
 }
 
 button:hover {
-  background-color:#dadce0;
+  background-color:var(--color-white);
+  color: var(--color-bg);
   transition: 0.3s;
 }
 
@@ -293,7 +296,7 @@ h5 {
 p {
     font-family: 'InterTight';
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -448,7 +451,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: right;
-  align-items: right;
+  align-items: end;
 }
 
 .project-link-line {
@@ -468,7 +471,6 @@ section {
 /*----------------------------------- Price Comparison-----------------------------------*/
 
 .comparison {
-  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -492,6 +494,14 @@ aside {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: top;
+  height: 430px;
+}
+
+#lucas-skills {
+  background: linear-gradient(#1D1E25, #1D1E25) padding-box,
+  linear-gradient(to right, #FF7B26, #FFD954) border-box;
+  border: 1px solid transparent;
+  height: 490px;
 }
 
 .comparison-title {
@@ -542,3 +552,31 @@ aside .button-container {
   justify-content: center;
   padding: 10px 0 6px 0;
 }
+
+
+
+/*-----------------------------------About-----------------------------------*/
+
+#about-header{
+  margin: 0 0 12px 0;
+}
+
+.about {
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about p {
+  margin: 0 0 32px 0;
+  font-size: 20px;
+  
+}
+
+.about img {
+  width: 300px;
+  height: 300px;
+  transform: rotate(-10deg);
+}
+
