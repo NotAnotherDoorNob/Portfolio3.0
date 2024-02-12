@@ -286,7 +286,7 @@ h4 {
 
 h5 {
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #super-bold {
@@ -493,7 +493,7 @@ aside {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: top;
+
   height: 430px;
 }
 
@@ -562,10 +562,14 @@ aside .button-container {
 }
 
 .about {
-  height: 440px;
+  height: 580px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.about h5 {
+margin: 48px 0 0 0;
 }
 
 .about p {
@@ -580,3 +584,30 @@ aside .button-container {
   transform: rotate(-10deg);
 }
 
+
+/*----------------------------------Footer----------------------------------*/
+
+
+footer {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.footer-container {
+  height: 146px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.email-social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 520px;
+}
+
+.footer-bold {
+  font-size: 32px;
+  font-weight: 400;
+}
