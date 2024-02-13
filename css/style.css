@@ -562,14 +562,18 @@ aside .button-container {
 }
 
 .about {
-  height: 580px;
+  height: 536px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.about .flex2-2 {
+  margin: 48px 0 0 0;
+}
+
 .about h5 {
-margin: 48px 0 0 0;
+margin: 116px 0 0 0;
 }
 
 .about p {
@@ -594,7 +598,7 @@ footer {
 }
 
 .footer-container {
-  height: 146px;
+  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -604,10 +608,27 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 520px;
+  width: 840px;
+}
+
+.email {
+  width: 50%
+}
+
+.social {
+  width: 50%
 }
 
 .footer-bold {
   font-size: 32px;
   font-weight: 400;
+}
+
+footer .link-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.social .hover-link {
+  margin: 0 20px 0 0;
 }
