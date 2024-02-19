@@ -404,8 +404,9 @@ section {
   position: relative;
 }
 
-.space-holder {
+#skill-container {
   height: calc(100vh - 69px);
+  width: 100%;
   background-color: #242936;
 }
 
@@ -635,7 +636,23 @@ footer .link-container {
 }
 
 
-.svg01 {
-  width: 50px;
+
+
+
+.circle-red {
   height: 50px;
+  width: 50px;
+  fill: var(--primary-red);
+}
+
+.circle-yellow {
+  height: 50px;
+  width: 50px;
+  fill: var(--primary-yellow);
+}
+
+.circle-blue {
+  height: 50px;
+  width: 50px;
+  fill: var(--primary-blue);
 }

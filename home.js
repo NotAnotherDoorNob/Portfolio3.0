@@ -17,6 +17,11 @@ const wordArray = [
 
 
 
+function percentToPixel(perc){
+  return ((window.innerWidth * (perc / 100)) -132);
+}
+
+
 function swapText() {
   if (count <= 6) {
   count++;
@@ -62,20 +67,27 @@ window.onload = () => {
 let scene = gsap.timeline();
 let speed = 200;
 
-// SCROLL TRIGGERS
+// Scroll trigger
 // --------------------------------------------------------
 ScrollTrigger.create({
   animation: scene,
-  trigger: ".space-holder",
-  start: "top top",
-  end: "100% 100%",
-  scrub: 2,
+  trigger: "#skill-container",
+  scrub: 1.5,
+  pin: true,
+  start: "-69 top",
+  end: "+=500",
+  toggleClass: "active",
+  delay: 0.2,
+  ease: "power2"
 });
 
 // SCENE
 
 
-scene.to(".svg01", { y: 60, ease: "power1.in" }, 0);
+scene.to(".circle-red", { x: percentToPixel(50) , y: 300, ease: "power1.in" }, 0);
+scene.to(".circle-yellow", { x: percentToPixel(50) , y: 190, ease: "power1.in" }, 0);
+scene.to(".circle-blue", { x: percentToPixel(50) , y: 80, ease: "power1.in" }, 0);
 
 
-
+console.log(window.innerWidth)
+console.log(percentToPixel(50))
