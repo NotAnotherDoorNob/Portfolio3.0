@@ -259,7 +259,7 @@ h1 {
     font-size: 9vw;
     font-weight: 300;
     margin: 0;
-    line-height: 6.6vw;
+    line-height: 8vw;
 }
 
 h2 {   
@@ -404,11 +404,13 @@ section {
   position: relative;
 }
 
-#skill-container {
+.skill-container {
   height: calc(100vh - 69px);
   width: 100%;
-  background-color: #242936;
+
 }
+
+
 
 /*----------------------------------- Projects -----------------------------------*/
 
@@ -637,7 +639,31 @@ footer .link-container {
 
 
 
+.skill-text {
+  font-family: 'PPNeueMachina';
+  font-size: 64px;
+  font-weight: 700;
+  fill: var(--color-font);
+}
 
+.skill-caption, .skill-caption-side {
+  font-family: 'PPNeueMachina';
+  font-size: 46px;
+  font-weight: 300;
+  fill: var(--color-font);
+}
+
+.skill-caption-side {
+  transform: rotate(14deg);
+  font-size: 32px;
+}
+
+.between-text {
+  font-family: 'PPNeueMachina';
+  font-size: 20px;
+  font-weight: 300;
+  fill: var(--color-font);
+}
 
 .circle-red {
   height: 50px;
