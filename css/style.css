@@ -682,3 +682,23 @@ footer .link-container {
   width: 50px;
   fill: var(--primary-blue);
 }
+
+
+
+/*------------------------------------------------Media Queries------------------------------------------*/
+
+/*-------------------600-------------------------*/
+@media only screen and (max-width: 600px) {
+  .hover-link {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    margin: 20px 0 4px;
+  }
+
+  #projects-about {
+    width: 124px;
+  }
+  
+}
