@@ -70,8 +70,102 @@ window.onload = () => {
 
 
 
+const skillContainer = document.getElementById("skill-container");
+const svgns = "http://www.w3.org/2000/svg";
 
-let speed = 200;
+
+
+// make sn svg
+let text00 = document.createElementNS(svgns, "text");
+let textSide = document.createElementNS(svgns, "text");
+let text01 = document.createElementNS(svgns, "text");
+let text02 = document.createElementNS(svgns, "text");
+let text03 = document.createElementNS(svgns, "text");
+let text04 = document.createElementNS(svgns, "text");
+
+let circleRed = document.createElementNS(svgns, "circle");
+let circleYellow = document.createElementNS(svgns, "circle");
+let circleBlue = document.createElementNS(svgns, "circle");
+
+let skillImage = document.createElementNS(svgns, "image");
+
+
+
+// set attributes 
+gsap.set(text00, {
+  attr: { x: 75, y: 120, class: "skill-caption text00" }
+});
+let text00Content = document.createTextNode('Three core skills');
+text00.appendChild(text00Content);
+
+gsap.set(textSide, {
+  attr: { x: 775, y: 40, class: "skill-caption-side text00" }
+});
+let textSideContent = document.createTextNode('(For the price of one 🫨)');
+textSide.appendChild(textSideContent);
+
+gsap.set(text01, {
+  attr: { x: 150, y: 220, class: "skill-text text01" }
+});
+let text01Content = document.createTextNode('UX Design');
+text01.appendChild(text01Content);
+
+gsap.set(text02, {
+  attr: { x: 150, y: 330, class: "skill-text text02" }
+});
+let text02Content = document.createTextNode('UX Research');
+text02.appendChild(text02Content);
+
+gsap.set(text03, {
+  attr: { x: 150, y: 440, class: "skill-text text03" }
+});
+let text03Content = document.createTextNode('UI Development');
+text03.appendChild(text03Content);
+
+gsap.set(text04, {
+  attr: { x: 0, y: 0, opacity: 0, class: "between-text text04" }
+});
+let text04Content = document.createTextNode('And everything in between');
+text04.appendChild(text04Content);
+
+
+
+
+
+gsap.set(circleRed, {
+  attr: { cx: 100, cy: 200, r: 25, fill: "#FE534C", class: "circle-red" }
+});
+
+gsap.set(circleYellow, {
+  attr: { cx: 100, cy: 310, r: 25, fill: "#F1C722", class: "circle-yellow" }
+});
+
+gsap.set(circleBlue, {
+  attr: { cx: 100, cy: 420, r: 25, fill: "#3470FD", class: "circle-blue" }
+});
+
+
+gsap.set(skillImage, {
+  attr: { x: 0, y: 320, opacity: 0, height: 200, width: 200,  href: "/images/rainbow-skill.png", class: "skill-image" }
+});
+
+
+// append the new rectangle to the svg
+skillContainer.appendChild(text00);
+skillContainer.appendChild(textSide);
+skillContainer.appendChild(text01);
+skillContainer.appendChild(text02);
+skillContainer.appendChild(text03);
+skillContainer.appendChild(text04);
+
+skillContainer.appendChild(circleRed);
+skillContainer.appendChild(circleYellow);
+skillContainer.appendChild(circleBlue);
+
+skillContainer.appendChild(skillImage);
+
+
+
 
 // Scroll trigger
 // --------------------------------------------------------
@@ -79,7 +173,7 @@ let speed = 200;
 
 let scene1 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".skill-container",
+    trigger: "#skill-container",
     scrub: 1.2,
     pin: true,
     start: "-69 top",
@@ -87,7 +181,6 @@ let scene1 = gsap.timeline({
     toggleClass: "active",
     delay: 0,
     ease: "power2",
-    markers: true
   }
 });
 
@@ -103,8 +196,8 @@ scene1.to(".circle-blue", { x: widthPercentToPixel(50) , y: -140, ease: "power1.
 scene1.to(".text04", { autoAlpha:0, x: widthPercentToPixel(50)-50 , y: heightPercentToPixel(25), ease: "power1.in" }, 0)
 .to(".text04", {scale: 3, autoAlpha:1,  transformOrigin: 'center', ease: "power4.inOut" });
 
-scene1.to(".circle-purple", { autoAlpha:0, x: widthPercentToPixel(50) , y: -40, ease: "power1.in" }, 0)
-.to(".circle-purple", {scale: 3.2, autoAlpha:1,  transformOrigin: 'center', ease: "power4.inOut" })
+scene1.to(".skill-image", { autoAlpha:0, x: widthPercentToPixel(50) , y: -40, ease: "power1.in" }, 0)
+.to(".skill-image", {scale: 3.2, autoAlpha:1,  transformOrigin: 'center', ease: "power4.inOut" })
 
 
 scene1.to(".text00", { scale: .1, autoAlpha:0, transformOrigin: 'center', ease: "power4.inOut" }, .20);
@@ -113,47 +206,6 @@ scene1.to(".text02", { scale: .1, autoAlpha:0, transformOrigin: 'center', ease: 
 scene1.to(".text03", { scale: .1, autoAlpha:0, transformOrigin: 'center', ease: "power4.inOut" }, .30);
 
 
-
-// let scene2 = gsap.timeline({
-//   scrollTrigger: {
-//   trigger: "#skill-container",
-//   scrub: 1.5,
-//   pin: true,
-//   start: "-69 top",
-//   end: "+=900",
-//   delay: 0,
-//   markers: true
-// }
-// });
-
-// scene2.to(".circle-red", {scale: .1, autoAlpha:0, transformOrigin: 'center', ease: "power4.inOut" })
-// scene2.to(".circle-yellow", {scale: .1, autoAlpha:0, transformOrigin: 'center', ease: "power4.inOut" });
-// scene2.to(".circle-blue", {scale: .1, autoAlpha:0, transformOrigin: 'center', ease: "power4.inOut" });
-
-
-//let scene = gsap.timeline();
-
-// ScrollTrigger.create({
-//   animation: scene,
-//   trigger: "#skill-container",
-//   scrub: 1.5,
-//   pin: true,
-//   start: "-69 top",
-//   end: "+=1000",
-//   toggleClass: "active",
-//   delay: 0,
-//   ease: "power2",
-//   markers: true
-// });
-
-
-// scene.to(".circle-red", { x: percentToPixel(50) , y: 300, ease: "power1.in" }, .25)
-// scene.to(".circle-yellow", { x: percentToPixel(50) , y: 190, ease: "power1.in" }, .30);
-// scene.to(".circle-blue", { x: percentToPixel(50) , y: 80, ease: "power1.in" }, .35);
-
-// scene.to(".text01", { scale: .1, autoAlpha:0, transformOrigin: 'center', ease: "power4.inOut" }, .25);
-// scene.to(".text02", { scale: .1, autoAlpha:0, transformOrigin: 'center', ease: "power4.inOut" }, .30);
-// scene.to(".text03", { scale: .1, autoAlpha:0, transformOrigin: 'center', ease: "power4.inOut" }, .35);
 
 
 

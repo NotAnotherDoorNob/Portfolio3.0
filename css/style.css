@@ -376,6 +376,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content:end ;
+  margin: 0 0 200px 0;
 }
 
 .lineContainer{
@@ -404,12 +405,61 @@ section {
   position: relative;
 }
 
-.skill-container {
+#skill-container {
   height: calc(100vh - 69px);
   width: 100%;
 
 }
 
+
+
+/*----------------------------------- skill animation -----------------------------------*/
+
+
+
+.skill-text {
+  font-family: 'PPNeueMachina';
+  font-size: 64px;
+  font-weight: 700;
+  fill: var(--color-font);
+}
+
+.skill-caption, .skill-caption-side {
+  font-family: 'PPNeueMachina';
+  font-size: 46px;
+  font-weight: 300;
+  fill: var(--color-font);
+}
+
+.skill-caption-side {
+  transform: rotate(14deg);
+  font-size: 32px;
+}
+
+.between-text {
+  font-family: 'PPNeueMachina';
+  font-size: 20px;
+  font-weight: 300;
+  fill: var(--color-font);
+}
+
+.circle-red {
+  height: 50px;
+  width: 50px;
+  fill: var(--primary-red);
+}
+
+.circle-yellow {
+  height: 50px;
+  width: 50px;
+  fill: var(--primary-yellow);
+}
+
+.circle-blue {
+  height: 50px;
+  width: 50px;
+  fill: var(--primary-blue);
+}
 
 
 /*----------------------------------- Projects -----------------------------------*/
@@ -639,53 +689,19 @@ footer .link-container {
 
 
 
-.skill-text {
-  font-family: 'PPNeueMachina';
-  font-size: 64px;
-  font-weight: 700;
-  fill: var(--color-font);
-}
 
-.skill-caption, .skill-caption-side {
-  font-family: 'PPNeueMachina';
-  font-size: 46px;
-  font-weight: 300;
-  fill: var(--color-font);
-}
-
-.skill-caption-side {
-  transform: rotate(14deg);
-  font-size: 32px;
-}
-
-.between-text {
-  font-family: 'PPNeueMachina';
-  font-size: 20px;
-  font-weight: 300;
-  fill: var(--color-font);
-}
-
-.circle-red {
-  height: 50px;
-  width: 50px;
-  fill: var(--primary-red);
-}
-
-.circle-yellow {
-  height: 50px;
-  width: 50px;
-  fill: var(--primary-yellow);
-}
-
-.circle-blue {
-  height: 50px;
-  width: 50px;
-  fill: var(--primary-blue);
-}
 
 
 
 /*------------------------------------------------Media Queries------------------------------------------*/
+
+
+
+/*-------------------1200-------------------------*/
+
+
+
+
 
 /*-------------------600-------------------------*/
 @media only screen and (max-width: 600px) {
