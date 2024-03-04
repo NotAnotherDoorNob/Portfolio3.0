@@ -184,7 +184,7 @@ hr {
 /*--------hover large---------*/
 .hover-link-lg {
   font-family: 'PPNeueMachina';
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 500;
   overflow: hidden;
   display: block;
@@ -482,7 +482,7 @@ section {
 }
 
 .project-about {
-  width: 40%;
+  width: 46%;
   padding: 0 0 0 16px;
   display: flex;
   flex-direction: column;
@@ -490,7 +490,7 @@ section {
 }
 
 .project-images {
-  width: 50%;
+  width: 46%;
   background-color: rgb(48, 48, 48);
 }
 
@@ -504,12 +504,12 @@ section {
 
 
 .flex1-2 {
-  width: 100%;
+  width: 40%;
   margin: 0 10px 0 0;
 }
 
 .flex2-2 {
-  width: 100%;
+  width: 60%;
   margin: 0 0 0 10px;
   display: flex;
   flex-direction: column;
@@ -715,6 +715,15 @@ footer .link-container {
     line-height: 8vw;
 }
 
+.hover-link-lg {
+  font-size: 3.5rem;
+}
+
+.flex1-2 h3 {
+  font-size: 3.5rem;
+}
+
+
 }
 /*----------------------------------992---------------------------------*/
 @media only screen and (max-width: 992px) {
@@ -735,6 +744,23 @@ footer .link-container {
     width: 45%;
   }
 
+  .project-links {
+    height: 460px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flex1-2 {
+    width: 100%
+  }
+  .flex2-2 {
+    width: 100%
+  }
+
+  .hover-link-lg {
+    font-size: 3rem;
+  }
+
 }
 
 /*----------------------------------768---------------------------------*/
@@ -751,6 +777,37 @@ h2 {
 h3 {   
   font-size: 3rem;
 }
+
+  /*------------Projects-------------*/
+  .project {
+    height: calc(100vh - 120px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0 75px 0;
+  }
+
+ h2{
+    margin: 0;
+  }
+
+  .project-about {
+    width: 80vw;
+    padding: 0;
+    margin: 24px 0 0 0;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .project-about p {
+    margin: 0;
+  }
+  
+  .project-images {
+    width: 80vw;
+    height: 80vw;
+    background-color: rgb(48, 48, 48);
+  }
 
 }
 
@@ -790,6 +847,10 @@ h3 {
   }
   
   /*------------Navigation-------------*/
+  nav {
+    padding: 0 10px;
+  }
+  
   .hover-link {
     font-size: 1rem;
   }
@@ -801,7 +862,32 @@ h3 {
   #projects-about {
     width: 124px;
   }
+
+
   
 }
 
 
+
+/*----------------------------------450---------------------------------*/
+@media only screen and (max-width: 450px) {
+
+  p {
+    margin: 12px 0 0 0;
+  }
+
+  
+}
+
+
+
+/*----------------------------------340---------------------------------*/
+@media only screen and (max-width: 340px) {
+
+
+  p {
+    font-size: 0.813rem;
+  }
+
+  
+}
