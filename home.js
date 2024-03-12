@@ -47,7 +47,7 @@ const alternateText = () => {
     defaults: { ease: "expo.inOut", duration: 1.3}
   })
     .add('start')
-    .to(line, { y: 210, delay: 3.5 , skewY: 7,stagger: {
+    .to(line, { y: 210, delay: 2 , skewY: 7,stagger: {
     amount: 7
     },  onComplete: swapText})
     .to(line, { y: 0, delay: .1, skewY: 0, stagger: {
