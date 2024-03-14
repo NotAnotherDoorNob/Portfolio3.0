@@ -304,15 +304,17 @@ p {
 
 .pill-container {
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: left;
   align-items: center;
   padding: 16px 0;
+  max-width: 520px ;
 }
 
 .pill {
   display: inline-flex;
   padding: 6px 20px;
-  margin: 0 12px 0 0;
+  margin: 0 12px 12px 0;
   justify-content: center;
   align-items: center;
   color: var(--color-bg);
@@ -324,6 +326,11 @@ p {
   font-weight: 800;
   }
 
+
+  #red {
+    background: var(--primary-red);
+  }
+
   #purple-red {
     background: var(--Gradient-Purple-Red);
   }
@@ -332,8 +339,33 @@ p {
     background: var(--Gradient-Blue-Purple);
   }
 
+  #blue-purple {
+    background: var(--Gradient-Blue-Purple);
+  }
 
+  #blue {
+    background: var(--primary-blue);
+  }
 
+  #green-blue {
+    background: var(--Gradient-Green-Blue);
+  }
+
+  #yellow-green {
+    background: var(--Gradient-Yellow-Green);
+  }
+
+  #yellow {
+    background: var(--primary-yellow);
+  }
+
+  #orange-yellow {
+    background: var(--Gradient-Orange-Yellow);
+  }
+
+  #red-orange {
+    background: var(--Gradient-Red-Orange);
+  }
 
 
 /*----------------------------------- navigation -----------------------------------*/
@@ -497,7 +529,6 @@ section {
 
 .project img {
     width: 100%;
-    max-width: 520px;
 }
 
 .project-about {
@@ -517,7 +548,7 @@ section {
 }
 
 .project p {
-max-width: 420px;
+width: 420px;
 }
 
 .project-links {
@@ -785,28 +816,64 @@ footer .link-container {
   }
   /*------------Projects-------------*/
   
+  .project {
+    height: calc(120vh);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 75px 0;
+  }
 
-  
+  .project img {
+    width: 100%;
+}
+
   .project-about {
     width: 45%;
+    padding: 0 0 0 40px;
+    width: 80vw;
+    padding: 0;
+    margin: 24px 0 0 0;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .project-links {
-    height: 460px;
+    height: 380px;
     flex-direction: column;
     justify-content: center;
   }
 
   .projects .flex1-2 {
-    width: 100%
+    width: 100%;
   }
   .projects .flex2-2 {
-    width: 100%
+    width: 100%;
+    align-items: start;
   }
 
   .hover-link-lg {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
+
+  .projects h2{
+    margin: 0 0 50px 0;
+  }
+
+  .project-about p {
+    margin: 0;
+    width: 540px;
+  }
+  
+  .project-images {
+    width: 80vw;
+  }
+
+
+  .project-link-line {
+    margin: 20px 0 0 0;
+  }
+
   /*------------About-------------*/
   .about .flex1-2 {
     width: 60%;
@@ -836,52 +903,12 @@ h3 {
 }
 
   /*------------Projects-------------*/
-  .project {
-    height: calc(100vh - 120px);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 75px 0;
-  }
-
- .projects h2{
-    margin: 0 0 50px 0;
-  }
-
-  .project-about {
-    width: 80vw;
-    padding: 0;
-    margin: 24px 0 0 0;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
   .project-about p {
     margin: 0;
-  }
-  
-  .project-images {
-    width: 80vw;
-    height: 80vw;
-    background-color: rgb(48, 48, 48);
+    width: 100%;
   }
 
-  .project-links {
-    height: 380px;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .projects .flex2-2 {
-    align-items: start;
-  }
-
-  .hover-link-lg {
-    font-size: 2.6rem;
-  }
-  .project-link-line {
-    margin: 20px 0 0 0;
-  }
+ 
 
 /*------------Price Comparison------------*/
 
