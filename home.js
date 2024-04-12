@@ -209,7 +209,7 @@ skillContainer.appendChild(skillImage);
 let scene1 = gsap.timeline({
   scrollTrigger: {
     trigger: "#skill-container",
-    scrub: 1.2,
+    scrub: 1,
     pin: true,
     start: "-69 top",
     end: () => "bottom +69",
