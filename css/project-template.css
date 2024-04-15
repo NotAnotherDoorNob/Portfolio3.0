@@ -1,0 +1,61 @@
+/*----------------------------------- Header/Description -----------------------------------*/
+
+header {
+    justify-content: start;
+    height: auto;
+    margin: 0;
+  }
+
+  .titles {
+    margin: 0 0 60px 0;
+  }
+
+  .project-template h2 {
+    margin: 52px 0 0 0;
+  }
+
+  .tag-holder {
+    display:flex;
+    flex-direction: column;
+    margin: 0 0 60px 0;
+  }
+
+  .tag {
+    display:flex;
+    flex-direction: row;
+    margin: 0 0 8px 0;
+  }
+
+  .tag h4 {
+    width: 32%;
+  }
+
+  .tag-content {
+    width: 68%;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .tag-content-final {
+    width: 64%;
+    font-size: 1.2rem;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+  }
+
+
+  /*----------------------------------- Problem -----------------------------------*/
+
+  .problem-context {
+    margin: 0 0 128px 0;
+  }
+
+/*----------------------------------- Solution -----------------------------------*/
+
+
+.sub-section {
+    display: flex;
+    flex-direction: column1;
+}
