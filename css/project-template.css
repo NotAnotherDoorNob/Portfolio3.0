@@ -7,11 +7,11 @@ header {
   }
 
   .titles {
-    margin: 0 0 60px 0;
+    margin: 0 0 86px 0;
   }
 
   .project-template h2 {
-    margin: 52px 0 0 0;
+    margin: 52px 0 24px 0;
   }
 
   .tag-holder {
@@ -38,7 +38,7 @@ header {
   }
 
   .tag-content-final {
-    width: 64%;
+    width: 68%;
     font-size: 1.2rem;
     font-weight: 200;
     display: flex;
@@ -46,7 +46,7 @@ header {
   }
 
 
-  /*----------------------------------- Problem -----------------------------------*/
+/*----------------------------------- Problem -----------------------------------*/
 
   .problem-context {
     margin: 0 0 128px 0;
@@ -57,5 +57,293 @@ header {
 
 .sub-section {
     display: flex;
-    flex-direction: column1;
+    flex-direction: column;
+    margin:0 0 96px 0;
+}
+
+.sub-section h3 {   
+    margin: 0 0 36px 0;
+  }
+
+
+/*----------------  Lists ------------------*/
+
+.lg-ol li{
+    font-size: 2.2rem;
+    font-weight: 200;
+    line-height: 2.4rem;
+}
+
+.lg-ul li{
+    font-size: 1.8rem;
+    font-weight: 200;
+    line-height: 2.2rem;
+}
+
+.half-ul {
+    width: 50%;
+}
+
+.half-ul  li{
+    margin: 0 0 16px 0;
+}
+
+
+
+/*----------------  Users ------------------*/
+.user-module {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 40px 0;
+}
+
+.user-img {
+    max-width: 300px;
+    margin: 0 72px 0 0;
+}
+
+.user-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*----------------  image containers ------------------*/
+img {
+    width: 100%;
+}
+
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 72px 0;
+}
+
+.img-container h4 {
+margin: 0 0 36px 0;
+}
+
+.img-container img {
+    margin: 0 0 36px 0;
+    }
+
+
+.img-text-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-text-row img {
+    width: 70%;
+}
+
+.ul-30 {
+    width: 30%;
+}
+
+
+/*----------------  flex rows/cols ------------------*/
+
+
+.row-half {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-half div{
+width: 50%;
+}
+
+/*----------------  other ------------------*/
+
+iframe {
+    height: 600px;
+    width: 100%;
+}
+
+
+
+/*--------------------------------------992-------------------------------------------------*/
+
+
+@media only screen and (max-width: 992px) {
+
+
+
+
+.tag h4 {
+    width: 42%;
+  }
+
+  .tag-content {
+    width: 58%;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .tag-content-final {
+    width: 58%;
+    font-size: 1rem;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+  }
+
+/*----------------------------------- Solution -----------------------------------*/
+
+/*----------------  image containers ------------------*/
+
+.user-img {
+    max-width: 200px;
+    margin: 0 48px 0 0;
+  }
+
+
+  .img-text-row {
+    flex-direction: column;
+}
+
+.img-text-row img {
+    width: 100%;
+  }
+
+/*----------------  lists ------------------*/
+
+.ul-30 {
+    width: 80%;
+  }
+
+.lg-ul li {
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.8rem;
+  }
+
+}
+
+
+
+/*----------------------------------768---------------------------------*/
+@media only screen and (max-width: 768px) {
+
+/*----------------  fonts ------------------*/
+h2 {
+    font-size: 5rem;
+  }
+
+
+h4 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+      }
+
+
+.tag {
+    justify-content: space-between;
+}
+
+.project-template h2 {
+     margin: 42px 0 14px 0;
+}
+
+
+}
+
+
+/*----------------------------------600---------------------------------*/
+@media only screen and (max-width: 600px) {
+
+
+/*----------------  fonts ------------------*/    
+h2 {
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+
+
+/*----------------------------------- Header/Description -----------------------------------*/
+  
+.titles {
+    margin: 0 0 60px 0;
+  }
+
+.project-template h2 {
+    margin: 42px 0 0 0;
+  }
+
+
+
+  .tag-content {
+    font-size: 1rem;
+  }
+
+  .tag-content-final {
+    width: 58%;
+    font-size: .75rem;
+    padding-top: 8px;
+  }
+
+  /*----------------------------------- Solution -----------------------------------*/
+
+    /*----------------  Users ------------------*/
+  .user-module {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 40px 0;
+    align-items: center;
+  }
+
+
+  .user-img {
+    max-width: 50%;
+    margin: 0 0 30px 0;
+  }
+
+  .user-description {
+    width: 100%;
+  }
+
+
+  .lg-ul li {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.4rem;
+  }
+
+  ul {
+    padding-inline-start: 20px;
+  }
+
+  li {
+    font-size: .75rem;
+    padding-inline-start: 10px;
+
+  }
+
+
+/*----------------  rows/cols ------------------*/
+  .row-half {
+    flex-direction: column;
+  }
+  .row-half div {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
 }
