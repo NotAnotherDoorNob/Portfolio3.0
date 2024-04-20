@@ -65,16 +65,18 @@ header {
     margin: 0 0 36px 0;
   }
 
+  .sub-section h5 {
+    margin: 0 0 36px 0;
+  }
+
 
 /*----------------  Lists ------------------*/
 
-.lg-ol li{
-    font-size: 2.2rem;
-    font-weight: 200;
-    line-height: 2.4rem;
+.ol-li-header {
+  margin: 0 0 -12px 0;
 }
 
-.lg-ul li{
+.lg-ul li, .lg-ol li, .ol-li-header{
     font-size: 1.8rem;
     font-weight: 200;
     line-height: 2.2rem;
@@ -118,7 +120,7 @@ img {
 .img-container {
     display: flex;
     flex-direction: column;
-    margin: 0 0 72px 0;
+    margin: 0 0 100px 0;
 }
 
 .img-container h4 {
@@ -135,7 +137,19 @@ margin: 0 0 36px 0;
     flex-direction: row;
 }
 
-.img-text-row img {
+.img-100 {
+  width: 100%;
+}
+
+.img-48 {
+  width: 48%;
+}
+
+.img-50 {
+  width: 50%;
+}
+
+.img-70 {
     width: 70%;
 }
 
@@ -143,6 +157,12 @@ margin: 0 0 36px 0;
     width: 30%;
 }
 
+
+/*----------------  spacers ------------------*/
+
+.margin-bottom-48 {
+  margin: 0 0 48px 0;
+}
 
 /*----------------  flex rows/cols ------------------*/
 
@@ -156,10 +176,14 @@ margin: 0 0 36px 0;
 width: 50%;
 }
 
+.space-between{
+  justify-content: space-between;
+}
+
 /*----------------  other ------------------*/
 
 iframe {
-    height: 600px;
+    height: 700px;
     width: 100%;
 }
 
@@ -206,7 +230,7 @@ iframe {
     flex-direction: column;
 }
 
-.img-text-row img {
+.img-70 {
     width: 100%;
   }
 
@@ -266,6 +290,7 @@ h4 {
     font-size: 1.5rem;
     line-height: 1.8rem;
   }
+  
 
   h3 {
     font-size: 2.8rem;
@@ -301,6 +326,17 @@ h4 {
 
   /*----------------------------------- Solution -----------------------------------*/
 
+  .sub-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px 60px 16px;
+  }
+
+  .sub-section h3 {
+    margin: 0 0 24px 0;
+  }
+
+
     /*----------------  Users ------------------*/
   .user-module {
     display: flex;
@@ -319,6 +355,11 @@ h4 {
     width: 100%;
   }
 
+/*----------------  lists ------------------*/
+
+.ul-30 {
+    width: 100%;
+  }
 
   .lg-ul li {
     font-size: 1rem;
@@ -336,6 +377,17 @@ h4 {
 
   }
 
+  /*----------------  images ------------------*/
+
+  .img-container img {
+    margin: 0 0 12px 0;
+  }
+
+
+  .img-container h4 {
+    margin: 0 0 18px 0;
+  }
+
 
 /*----------------  rows/cols ------------------*/
   .row-half {
@@ -347,3 +399,14 @@ h4 {
   }
 
 }
+
+@media only screen and (max-width: 380px) {
+
+    .tag h4 {
+        font-size: 1.2rem;
+      }
+
+
+
+}
+

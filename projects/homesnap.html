@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homesnap</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-template.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a class="hover-link" href="/index.html">Lucas Design</a>
+            <div id="projects-about">
+                <a class="hover-link" href="/projects.html">Projects</a>
+                <a class="hover-link" href="/projects.html#about-an">About</a>
+            </div>
+        </div>
+        <div class="nav-bar"></div>
+      </nav>
+      <main class="project-template">
+        <header class="description"> 
+            <div class="titles">
+                <h2>
+                    Homesnap
+                </h2>
+                <h5>
+                    Agent Client Connection
+                </h5>
+            </div>
+            <div class="tag-holder">
+                <div class="tag"><h4>Brand/Project:</h4><div class="tag-content">CoStar Group, Homesnap, Residential Real Estate</div></div>
+                <div class="tag"><h4>Role:</h4><div class="tag-content">UX Designer</div></div>
+                <div class="tag"><h4>Date:</h4><div class="tag-content">Q1 2022</div></div>
+                <div class="tag"><h4>Context:</h4>
+                    <div class="tag-content-final">The Homesnap team had recently released the “Showings” feature which assisted listing (seller) real estate agents in creating and coordinating showings on the platform. The team needed further functionality to add additional listing agents, buyer agents, and owner/occupants to an existing showing.</div></div>
+            </div>
+            <hr>
+        </header>
+        <section class="problem">
+            <div class="titles">
+                <h2>
+                    The Problem
+                </h2>
+                <h4>
+                    How do we make a seamless experience for listing agents to add other agents and home owners to their showing?
+                </h4>
+            </div>
+            <div class="problem-context">
+                <h5>
+                    *  Additional Considerations:
+                </h5>
+                <p>
+                   <ul>
+                    <li>
+                        This functionality needs to be applied across the brand’s desktop web, mobile web, iOS, and Android platforms
+                    </li>
+                   </ul>
+                </p>
+            </div>
+            <hr>
+        </section>
+        <section>
+            <div class="titles">
+                <h2>
+                    The Solution
+                </h2>
+                <h4>
+                    First, list out all contact types. Then, meet with developers and PMs from the web and native apps to understand how the interaction fits into each of their patterns for adding contact.
+                </h4>
+            </div>
+            <div class="sub-section">
+                <h3>
+                    Users
+                </h3>
+                <div class="user-module">
+                    <div class="user-img">
+                        <img src="/images/projects/homesnap-1.png" alt="Professional headshot of a realtor">
+                    </div>
+                    <div class="user-description">
+                        <h4>
+                            Agent: Alex Gonzales
+                        </h4>
+                        <ul>
+                            <li>Acts mostly on the seller side</li>
+                            <li>Needs better way to coordinate showings with owners and other agents</li>
+                            <li>Active Homesnap user</li>
+                            <li>Busy schedule with many active clients</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-section">
+                <h3>
+                    Main Required Actions
+                </h3>
+                <h5>
+                    The user needs to be able to add contacts to their showing, these can be other agents or owner/occupants of the home they’re showing. Whether a contact is connected (known or unknown) with them on Homesnap is also important.
+                </h5>
+                <div class="ol-li-header">Contact types:</div>
+                    <ol class="lg-ol">
+                        <li>Agent, known</li>
+                        <li>Agent, unknown</li>
+                        <li>Owner/occupant, known</li>
+                        <li>Owner/occupant, unknown</li>
+                    </ol>
+            </div>
+            <div class="sub-section">
+                <h3>
+                    Development Considerations
+                </h3>
+                <h5>
+                    Homesnap existed on web and native platforms, each with their own pattern for interacting with and adding contacts. The interaction flow for each would need to fit the existing software design for each platform.                </h5>
+            </div>
+            <div class="sub-section">
+                <h3>
+                    Actions Flows
+                </h3>
+                <ul class="margin-bottom-48">
+                    <li>Web pattern begins with checking if a contact is known</li>
+                    <li>Native pattern begins with checking the user type</li>
+                </ul>
+
+                <div class="row-half space-between">
+                    <img class="img-48" src="/images/projects/Homesnap-2.png">
+                    <img class="img-48" src="/images/projects/Homesnap-3.png">
+                </div>
+
+            </div>
+            <hr>
+        </section>
+
+
+        <section class="Results">
+            <div class="titles">
+                <h2>
+                    The Results
+                </h2>
+                <h4>
+                    After some additional cycles of feedback with developers I created high fidelity prototypes for all platform types.
+                </h4>
+            </div>
+            <div class="img-container">
+                <h4>Desktop Web</h4>
+                <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FeAq9R5WNKU778L5Dq8ZNaS%2FPortfolio-Staging%3Ftype%3Ddesign%26node-id%3D343%253A102023%26mode%3Ddesign%26t%3D7CLA5zis58H2TihQ-1" allowfullscreen></iframe>
+            </div>
+            <div class="img-container">
+                <h4>Mobile Web</h4>
+                <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FeAq9R5WNKU778L5Dq8ZNaS%2FPortfolio-Staging%3Ftype%3Ddesign%26node-id%3D343%253A110123%26mode%3Ddesign%26t%3D7CLA5zis58H2TihQ-1" allowfullscreen></iframe>            
+            </div>
+            <div class="img-container">
+                <h4>iOS</h4>
+                <iframe  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FeAq9R5WNKU778L5Dq8ZNaS%2FPortfolio-Staging%3Ftype%3Ddesign%26node-id%3D343%253A115242%26mode%3Ddesign%26t%3D7CLA5zis58H2TihQ-1" allowfullscreen></iframe>            
+            </div>
+            <div class="img-container">
+                <h4>Android</h4>
+                <iframe  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FeAq9R5WNKU778L5Dq8ZNaS%2FPortfolio-Staging%3Ftype%3Ddesign%26node-id%3D343%253A115267%26mode%3Ddesign%26t%3D7CLA5zis58H2TihQ-1" allowfullscreen></iframe>
+            </div>
+
+            <ul class="lg-ul">
+                <li>In 2021 the team switched from Sketch to Figma and I led the building out of the homsnap web, iOS, and android design systems in Figma</li>
+                <li> In 2023 CoStar Group made the decision to give Homesnap the chop in favor of their Homes.com brand. A common circumstance in enterprise product design but the former teams will always remember Homesnap fondly.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <hr>
+            <div class="footer-container">
+                <div class="email-social-container">
+                    <div class="email">
+                        <div class="footer-bold">
+                            Email
+                        </div>
+                        <div class="link-container">
+                            <a class="hover-link" href="mailto:lucashimesdesign@gmail.com">lucashimesdesign@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="footer-bold">
+                            Social
+                        </div>
+                        <div>
+                            <div class="link-container">
+                                <a class="hover-link" href="https://www.linkedin.com/in/lucas-himes-7b8265b9/">LinkedIn</a>
+                                <a class="hover-link" href="https://dribbble.com/LucasHimes">Dribbble</a>
+                                <a class="hover-link" href="https://github.com/NotAnotherDoorNob">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bold" id="copyright">
+                    ©2024
+                </div>
+            </div>
+        </footer>
+      </main>
+</body>
+<script src="index.html"></script>
+<script src="home.js"></script>
+</html>
