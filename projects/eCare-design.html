@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homesnap</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-template.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a class="hover-link" href="/index.html">Lucas Design</a>
+            <div id="projects-about">
+                <a class="hover-link" href="/projects.html">Projects</a>
+                <a class="hover-link" href="/projects.html#about-an">About</a>
+            </div>
+        </div>
+        <div class="nav-bar"></div>
+      </nav>
+      <main class="project-template">
+        <header class="description"> 
+            <div class="titles">
+                <h2>
+                    eCare
+                </h2>
+                <h5>
+                    Practitioner and Patient Apps
+                </h5>
+            </div>
+            <div class="tag-holder">
+                <div class="tag"><h4>Brand/Project:</h4><div class="tag-content">EMI Advisors, NIH Multiple Chronic Conditions, Healthcare IT</div></div>
+                <div class="tag"><h4>Role:</h4><div class="tag-content">Senior UX Designer</div></div>
+                <div class="tag"><h4>Date:</h4><div class="tag-content">Q3-Q4 2023</div></div>
+                <div class="tag"><h4>Context:</h4>
+                    <div class="tag-content-final">As part of a federal health contract we were tasked with creating two interconnected applications that leverage new healthcare data interoperability standards to facilitate exchange of health information between patients and provider (what a mouthful).  We entered the project midway, inheriting an initial attempt from a previous contractor whose software and UX designs were subpar.</div></div>
+            </div>
+            <hr>
+        </header>
+        <section class="problem">
+            <div class="titles">
+                <h2>
+                    The Problem
+                </h2>
+                <h4>
+                    We need to create an application for health practitioners and an app for patients that leverage new health data interoperability standards for cross communication.
+                </h4>
+            </div>
+            <div class="problem-context">
+                <h5>
+                    *  Additional Considerations:
+                </h5>
+                <p>
+                   <ul>
+                    <li>
+                        All data to be displayed needed to be compliant with FHIR health data standards requiring cursory understanding of these standards and close collaboration with subject matter experts
+                    </li>
+                    <p></p>
+                    <li>
+                        All UI designs needed to abide by MUI guidelines as the project was developed in React with little bandwidth for style/UI customization
+                    </li>
+                   </ul>
+                </p>
+            </div>
+            <hr>
+        </section>
+        <section>
+            <div class="titles">
+                <h2>
+                    The Solution
+                </h2>
+                <h4>
+                    Map information architecture and improve upon the existing UI styles
+                </h4>
+            </div>
+            <div class="sub-section">
+                <h3>
+                    Data Flow
+                </h3>
+                <img class="img-100 margin-bottom-48" src="/images/projects/eCare-design-1.png" alt="Diagram of the flow of electronic health record data">
+                <div class="ol-li-header">These two apps would allow:</div>
+                    <ol class="lg-ol text-80">
+                        <li>Practitioners to access health goals and survey results created by patients</li>
+                        <p></p>
+                        <li>Patients to see their clinical diagnosis, medications, and vital measures across all of their healthcare providers</li>
+                    </ol>
+            </div>
+            <div class="sub-section">
+                <h3>
+                    Original Practitioner App Design
+                </h3>
+                <p>The design we inherited when our team joined midway through the project.</p>
+                <img class="img-100 margin-bottom-48" src="/images/projects/eCare-design-2.png" alt="Screenshot of the original eCare app design">
+            </div>
+            <div class="sub-section">
+                <h3>
+                    Design System
+                </h3>
+                <p>From the original design I developed a loose design system base in MUI. Because developer resources were limited, I aimed to keep custom styles minimal.</p>
+                <img class="img-100 margin-bottom-48" src="/images/projects/eCare-design-3.png" alt="Design system">
+            </div>
+            <div class="sub-section">
+                <h3>
+                    Improved UI
+                </h3>
+                <p>Combining the original design patterns and the new design system, I created an improved UI.</p>
+                <img class="img-100 margin-bottom-48" src="/images/projects/eCare-design-4.png" alt="UI of a healthcare app for providers">
+            </div>
+            <div class="sub-section margin-bottom-120">
+                <h3>
+                    Patient Application
+                </h3>
+                <p>A similar re-design was conducted for the patient application but for sake of time, we won’t go too deep into that. The original is on the left and the re-design is on the right.</p>
+                <div class="row-half-992 space-between">
+                    <div class="row-half-992 justify-content-center">
+                        <img class="img-100 mw-444" src="/images/projects/eCare-design-5.png" alt="UI of a healthcare app for patients">
+                    </div>
+                    <div class="row-half-992 justify-content-center">
+                        <img class="img-100 mw-292" src="/images/projects/eCare-design-6.png" alt="UI of a healthcare app for patients">
+                    </div>
+                </div>
+            </div>
+            <div class="sub-section justify-content-center">
+                <h3>
+                    🧑‍🔬 *Focus Group* 🧑‍🔬 
+                </h3>
+                <h5>At this stage a focus group to improve upon the practitioner app was conducted. That can be found as a separate care study.</h5>
+                <a class="btn" href="projects.html#about-an">
+                    eCare Focus Group
+                </a>
+            </div>
+            <hr>
+        </section>
+
+
+        <section class="Results">
+            <div class="titles">
+                <h2>
+                    The Results
+                </h2>
+                <h4>
+                    Improved new design and implementation of feature recommendations from the focus group.                
+                </h4>
+            </div>
+            <div class="img-container">
+                <h4>Final Designs in Figma</h4>
+                <iframe  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FeAq9R5WNKU778L5Dq8ZNaS%2FPortfolio-Staging%3Ftype%3Ddesign%26node-id%3D808%253A118718%26mode%3Ddesign%26t%3DqaKI8HqRxWsoFHvp-1" allowfullscreen></iframe>
+            </div>
+            <div>
+                <p class="margin-bottom-24">
+                    A click through prototype was also made in Figma and used for facilitation of a focus group related to this project.
+                </p>
+                <a class="btn margin-bottom-72" target=”_blank” href="https://www.figma.com/proto/4DByIpRr4ByYLMN98EJJjf/MCC-eCare-Clinician-App-(FG2)?page-id=680%3A3934&type=design&node-id=811-25776&viewport=341%2C473%2C0.1&t=jiQ7ND4rdmtBZ4mk-1&scaling=min-zoom&mode=design">
+                    Click-through Prototype
+                </a>
+            </div>
+
+
+        </section>
+
+        <footer>
+            <hr>
+            <div class="footer-container">
+                <div class="email-social-container">
+                    <div class="email">
+                        <div class="footer-bold">
+                            Email
+                        </div>
+                        <div class="link-container">
+                            <a class="hover-link" href="mailto:lucashimesdesign@gmail.com">lucashimesdesign@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="footer-bold">
+                            Social
+                        </div>
+                        <div>
+                            <div class="link-container">
+                                <a class="hover-link" href="https://www.linkedin.com/in/lucas-himes-7b8265b9/">LinkedIn</a>
+                                <a class="hover-link" href="https://dribbble.com/LucasHimes">Dribbble</a>
+                                <a class="hover-link" href="https://github.com/NotAnotherDoorNob">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bold" id="copyright">
+                    ©2024
+                </div>
+            </div>
+        </footer>
+      </main>
+</body>
+<script src="index.html"></script>
+<script src="home.js"></script>
+</html>

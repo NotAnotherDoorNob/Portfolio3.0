@@ -69,6 +69,10 @@ header {
     margin: 0 0 36px 0;
   }
 
+  .sub-section p {
+    margin: 0 0 36px 0;
+  }
+
 
 /*----------------  Lists ------------------*/
 
@@ -153,31 +157,80 @@ margin: 0 0 36px 0;
     width: 70%;
 }
 
-.ul-30 {
-    width: 30%;
+
+.mw-444 {
+max-width: 444px;
+height: 623px;
+}
+
+.mw-292 {
+  max-width: 292px;
+  height: 628px;
+  }
+
+
+
+/*----------------  text containers ------------------*/
+
+.text-30 {
+  width: 30%;
+}
+
+.text-80 {
+  width: 80%;
 }
 
 
+
+
 /*----------------  spacers ------------------*/
+
+.margin-bottom-24 {
+  margin: 0 0 24px 0;
+}
 
 .margin-bottom-48 {
   margin: 0 0 48px 0;
 }
 
+.margin-bottom-72 {
+  margin: 0 0 72px 0;
+}
+
+.margin-bottom-120 {
+  margin: 0 0 120px 0;
+}
+
 /*----------------  flex rows/cols ------------------*/
 
 
-.row-half {
+.row-half-992 {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-half-992 div{
+  width: 48%;
+  }
+
+
+.row-half-600 {
     display: flex;
     flex-direction: row;
 }
 
-.row-half div{
+.row-half-600 div{
 width: 50%;
 }
 
 .space-between{
   justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 /*----------------  other ------------------*/
@@ -236,7 +289,7 @@ iframe {
 
 /*----------------  lists ------------------*/
 
-.ul-30 {
+.text-30 {
     width: 80%;
   }
 
@@ -245,6 +298,18 @@ iframe {
     font-weight: 200;
     line-height: 1.8rem;
   }
+
+
+
+  .row-half-992 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row-half-992 div{
+    width: 96%;
+    margin: 0 0 48px 0;
+    }
 
 }
 
@@ -274,6 +339,11 @@ h4 {
 }
 
 
+.text-80 {
+  width: 100%;
+}
+
+
 }
 
 
@@ -298,6 +368,10 @@ h4 {
 
   h5 {
     font-size: 1.25rem;
+  }
+
+  .sub-section h5 {
+    line-height: 1.8rem;
   }
 
 
@@ -357,9 +431,11 @@ h4 {
 
 /*----------------  lists ------------------*/
 
-.ul-30 {
+.text-30 {
     width: 100%;
   }
+
+
 
   .lg-ul li {
     font-size: 1rem;
@@ -390,13 +466,29 @@ h4 {
 
 
 /*----------------  rows/cols ------------------*/
-  .row-half {
+  .row-half-600 {
     flex-direction: column;
   }
-  .row-half div {
+  .row-half-600 div {
     width: 100%;
     margin: 0 0 20px 0;
   }
+
+
+  .row-half-992 div{
+    width: 100%;
+    }
+
+
+    .mw-444 {
+      max-width: 300px;
+      height: 420px;
+      }
+      
+      .mw-292 {
+        max-width: 292px;
+        height: 628px;
+        }
 
 }
 
