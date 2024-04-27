@@ -396,6 +396,26 @@ li {
   }
 
 
+
+/*----------------------------------- components -----------------------------------*/
+
+
+  .aside-box {
+    border: solid 1px var(--color-white);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 34px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .aside-text {
+    width: 66%;
+
+  }
+
+
 /*----------------------------------- navigation -----------------------------------*/
 
 
@@ -1030,6 +1050,19 @@ h3 {
 
   .line {
     height: 100px;
+  }
+
+  /*------------Components-------------*/
+  .aside-box {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+  }
+
+  .aside-text {
+    width: 100%;
+    margin-bottom: 20px;
   }
   
   /*------------Navigation-------------*/
