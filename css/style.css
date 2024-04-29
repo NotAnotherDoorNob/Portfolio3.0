@@ -415,6 +415,44 @@ li {
 
   }
 
+  /*----------------  tables ------------------*/
+
+
+table {
+  background-color: var(--color-bg);
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid var(--color-white);
+}
+
+
+table, td, th {
+  border: 1px solid #818181;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  
+}
+
+th {
+  background-color: var(--color-white);
+  color: var(--color-bg);
+}
+
+
+thead tr th:first-child,
+tbody tr td:first-child {
+  text-align: right;
+  padding-right: 16px;
+  min-width: 120px;
+}
+
+tr:hover {
+  background-color: #31323c;
+}
 
 /*----------------------------------- navigation -----------------------------------*/
 
@@ -1141,6 +1179,24 @@ h3 {
   footer .hover-link {
     font-size: .9rem;
   }
+
+  /*------------Tables-------------*/
+
+  tbody {
+    font-size: .8rem;
+  }
+
+thead tr th:first-child,
+tbody tr td:first-child {
+  text-align: right;
+  min-width: 98px;
+}
+
+th, td {
+  text-align: left;
+  padding: 4px;
+  
+}
   
 
 }
