@@ -466,7 +466,7 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: var(--color-bg);
-  z-index: 100;
+  z-index: 10000;
   position: sticky;
   top: 0px;
 }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Case Data</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-template.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js" integrity="sha512-a5hlZKgpC1LVAuKgVeXdP0D9Yfacj0hLtNdzx9zFMkIWRrQyO37KtIPiqArGmVuaBYu3ON6Vt0N3+G/JaLXQYQ==" crossorigin="anonymous"></script>
+    <script src="/projects/js/mappa.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a class="hover-link" href="/index.html">Lucas Design</a>
+            <div id="projects-about">
+                <a class="hover-link" href="/projects.html">Projects</a>
+                <a class="hover-link" href="/projects.html#about-an">About</a>
+            </div>
+        </div>
+        <div class="nav-bar"></div>
+      </nav>
+      <main class="project-template">
+        <header class="description"> 
+            <div class="titles">
+                <h2>
+                    Covid-19 Case
+                </h2>
+                <h5>
+                    Live Data Map
+                </h5>
+            </div>
+        </header>
+        <section class="problem">
+            <div id="sketch-holder">
+                <!-- Our sketch will go here! -->
+            </div>
+            <div>
+                <div>
+                    <a class="label">Country:</a>
+                    <a id="countryName"></a>
+                </div>     
+                <div>
+                    <a class="label">Total Covid-19 Cases:</a>
+                    <a id="covidTotal"></a>
+                </div> 
+                <div class="aside">
+                    <p>Current World Total Covid-19 Cases: <a id="DOCworldTotal">test</a></p>
+                    <p>Numbers are current as of <a id="update">test</a></p>
+                    <p>Data retrieved from John Hopkins CCEGIS Data Set: 
+                        <a href="https://github.com/CSSEGISandData/COVID-19">Data Source</a></p>
+                </div>
+            </div>
+
+        </section>
+        
+
+        <footer>
+            <hr>
+            <div class="footer-container">
+                <div class="email-social-container">
+                    <div class="email">
+                        <div class="footer-bold">
+                            Email
+                        </div>
+                        <div class="link-container">
+                            <a class="hover-link" href="mailto:lucashimesdesign@gmail.com">lucashimesdesign@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="footer-bold">
+                            Social
+                        </div>
+                        <div>
+                            <div class="link-container">
+                                <a class="hover-link" href="https://www.linkedin.com/in/lucas-himes-7b8265b9/">LinkedIn</a>
+                                <a class="hover-link" href="https://dribbble.com/LucasHimes">Dribbble</a>
+                                <a class="hover-link" href="https://github.com/NotAnotherDoorNob">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bold" id="copyright">
+                    ©2024
+                </div>
+            </div>
+        </footer>
+      </main>
+</body>
+<script src='/projects/js/programming-coviddata.js'></script>
+</html>
