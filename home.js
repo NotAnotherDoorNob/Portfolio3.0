@@ -216,7 +216,7 @@ let scene1 = gsap.timeline({
     toggleClass: "active",
     delay: 0,
     ease: "power2",
-    markers: true
+    markers: false
   }
 });
 

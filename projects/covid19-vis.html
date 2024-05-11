@@ -18,7 +18,7 @@
 <body>
     <nav>
         <div class="nav-links">
-            <a class="hover-link" href="/index.html">Lucas Design</a>
+            <a class="hover-link" href="/index.html">Lucashimes.design</a>
             <div id="projects-about">
                 <a class="hover-link" href="/projects.html">Projects</a>
                 <a class="hover-link" href="/projects.html#about-an">About</a>
@@ -33,30 +33,37 @@
                     Covid-19 Case
                 </h2>
                 <h5>
-                    Live Data Map
+                    Geo visualization with p5.js and mappa
                 </h5>
+                
             </div>
         </header>
         <section class="problem">
-            <div id="sketch-holder">
-                <!-- Our sketch will go here! -->
-            </div>
-            <div>
-                <div>
-                    <a class="label">Country:</a>
-                    <a id="countryName"></a>
-                </div>     
-                <div>
-                    <a class="label">Total Covid-19 Cases:</a>
-                    <a id="covidTotal"></a>
-                </div> 
-                <div class="aside">
-                    <p>Current World Total Covid-19 Cases: <a id="DOCworldTotal">test</a></p>
-                    <p>Numbers are current as of <a id="update">test</a></p>
-                    <p>Data retrieved from John Hopkins CCEGIS Data Set: 
-                        <a href="https://github.com/CSSEGISandData/COVID-19">Data Source</a></p>
+            <p class="margin-bottom-24">Hover over a circle on the map below</p>
+            <div class="row-half-992 margin-bottom-72">
+                <div id="sketch-holder" class="img-50 row-half-992-1">
+                    <!-- Our sketch will go here! -->
                 </div>
+                <div class="row-half-992-2">
+                    <div style="display: flex; flex-direction: row; margin-bottom: 24px;">
+                        <h5 class="label" style="margin-right: 8px;">Country:</h5>
+                        <h5 id="countryName"></h5>
+                    </div>     
+                    <div style="display: flex; flex-direction: row;">
+                        <h5 class="label" style="margin-right: 8px;">Total Covid-19 Cases:</h5>
+                        <h5 id="covidTotal"></h5>
+                    </div> 
+                    <div class="aside">
+                        <p>Total Global Covid-19 Cases: <a id="DOCworldTotal">test</a></p>
+                        <p>Counts updated daily until John Hopkins seased publishing live case counts as of <a id="update">test</a></p>
+                        <p>Data retrieved from 
+                            <a style="text-decoration: underline;" href="https://github.com/CSSEGISandData/COVID-19">John Hopkins CCEGIS Data Set</a></p>
+                    </div>
+                </div>
+
             </div>
+
+
 
         </section>
         

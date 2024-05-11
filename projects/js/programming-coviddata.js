@@ -121,9 +121,18 @@ function formatNumber(num) {
 let data = [];
 let worldTotalArray = [];
 
+let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+let canvasWidth
+
+if (vw > 1000) {
+  canvasWidth = (vw / 2.2)
+} else {
+  canvasWidth = (vw - 60)
+}
+
 function setup(){
 
-  canvas = createCanvas(800,550); 
+  canvas = createCanvas((canvasWidth),550); 
   canvas.parent('sketch-holder');
 
   myMap = mappa.tileMap(options); 
