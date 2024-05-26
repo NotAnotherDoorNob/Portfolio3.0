@@ -47,7 +47,7 @@ const alternateText = () => {
     defaults: { ease: "expo.inOut", duration: 1.3}
   })
     .add('start')
-    .to(line, { y: 210, delay: 2 , skewY: 7,stagger: {
+    .to(line, { y: 250, delay: 2 , skewY: 7,stagger: {
     amount: 7
     },  onComplete: swapText})
     .to(line, { y: 0, delay: .1, skewY: 0, stagger: {
@@ -84,7 +84,6 @@ function heightPercentToPixel(perc){
  : windowWidth > 800 ? 'greater than 800'
  : 'else';
 
-let textSidex = windowWidth > 1200  ? (windowWidth - 600) : -600;
 
 let skillTextSize = windowWidth > 1200  ? "skill-text-1200" : "skill-text-600";
 
@@ -110,9 +109,8 @@ const svgns = "http://www.w3.org/2000/svg";
 
 
 
-// make sn svg
+// make an svg
 let text00 = document.createElementNS(svgns, "text");
-let textSide = document.createElementNS(svgns, "text");
 let text01 = document.createElementNS(svgns, "text");
 let text02 = document.createElementNS(svgns, "text");
 let text03 = document.createElementNS(svgns, "text");
@@ -133,11 +131,6 @@ gsap.set(text00, {
 let text00Content = document.createTextNode('Three core skills');
 text00.appendChild(text00Content);
 
-gsap.set(textSide, {
-  attr: { x: textSidex, y: 40, class: "skill-caption-side text00" }
-});
-let textSideContent = document.createTextNode('(For the price of one 🫨)');
-textSide.appendChild(textSideContent);
 
 gsap.set(text01, {
   attr: { x: skillTextx, y: text01y,  class:  `${skillTextSize} text01`}
@@ -187,12 +180,10 @@ gsap.set(skillImage, {
 
 // append the new rectangle to the svg
 skillContainer.appendChild(text00);
-skillContainer.appendChild(textSide);
 skillContainer.appendChild(text01);
 skillContainer.appendChild(text02);
 skillContainer.appendChild(text03);
 skillContainer.appendChild(text04);
-
 skillContainer.appendChild(circleRed);
 skillContainer.appendChild(circleYellow);
 skillContainer.appendChild(circleBlue);
@@ -220,19 +211,18 @@ let scene1 = gsap.timeline({
   }
 });
 
-let circlexTo = windowWidth > 500  ? widthPercentToPixel(50) : (windowWidth / 2.8) ;
+let circlexTo = windowWidth > 1200  ? (((windowWidth / 2))-((windowWidth - 1350)/2) -75) : windowWidth > 500  ? widthPercentToPixel(50) : (windowWidth / 2.8) ;
 let circleRedyTo = windowWidth > 500  ? 80 : 60;
 let circleBlueTo = windowWidth > 500  ? -140 : -115;
 
-let skillImageScale = windowWidth > 1000  ? ((windowWidth * .005))  : ((windowWidth * .008));
-let skillImagex = windowWidth > 600  ? ((windowWidth * .5)-75) : ((windowWidth * .5)-62.5);
-let skillImagey = windowWidth > 700  ? windowHeight * .05 : ((windowHeight * .05) - 69);
+let skillImageScale = windowWidth > 1200  ? 7 : windowWidth > 1000  ? ((windowWidth * .005))  : ((windowWidth * .008));
+let skillImagex = windowWidth > 1200  ? (((windowWidth / 2))-((windowWidth - 1300)/2)) : windowWidth > 600  ? ((windowWidth * .5)-75) : ((windowWidth * .5)-62.5);
+let skillImagey =  windowHeight > 1200  ? (windowHeight * .2) : (windowHeight * .1) ;
 
 
-let skillBetweenScale = windowWidth > 1000  ? ((windowWidth * .02))  : ((windowWidth * .025));
-let skillBetweenx = windowWidth > 600  ? ((windowWidth * .5)-50) : ((windowWidth * .5)-26);
-let skillBetweeny = windowWidth > 700  ? windowHeight * .14 : 
-windowWidth > 440  ? (windowHeight * .2) : (windowHeight * .25);
+let skillBetweenScale = windowWidth > 1200  ? 25 : windowWidth > 1000  ? ((windowWidth * .02))  : ((windowWidth * .025));
+let skillBetweenx = windowWidth > 1200  ? (((windowWidth / 2))-((windowWidth - 1350)/2)) : windowWidth > 600  ? ((windowWidth * .5)-50) : ((windowWidth * .5)-25);
+let skillBetweeny = windowHeight > 1200  ? (windowHeight * .2) + 200 : (windowHeight * .1) +50;
 
 
 scene1.to(".circle-red", { x: circlexTo , y: circleRedyTo, ease: "power1.in" }, .20)
