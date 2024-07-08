@@ -1,5 +1,5 @@
 
-
+/////////////////////////////////////////////////////test
 /////////////////////////////////////////////////////alternate text animation
 
 gsap.registerPlugin(ScrollTrigger);
@@ -15,7 +15,8 @@ const wordArray = [
   "D&D Enthusiast",
   "Daft Punk Fan",
   "Amature Baker",
-  "Human Person"
+  "Human Person",
+  "Test"
 ];
 
 
