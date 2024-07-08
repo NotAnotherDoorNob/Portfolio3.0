@@ -15,8 +15,7 @@ const wordArray = [
   "D&D Enthusiast",
   "Daft Punk Fan",
   "Amature Baker",
-  "Human Person",
-  "Test"
+  "Human Person"
 ];
 
 
